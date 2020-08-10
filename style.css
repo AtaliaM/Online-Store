@@ -35,7 +35,7 @@ header {
     flex-direction: column;
     height:fit-content;
     padding: 5px;
-    width: 100vw;
+    /* width: 100%; */
     background: var(--header-secondary-font-color);
     background-size: cover;
     font-family: var(--header-font);
@@ -171,14 +171,14 @@ header h2 {
 .pic-1 img {
     
     transform: translateX(-1300px);
-    animation: move-back 3s ease-in-out forwards;
+    animation: move-back 1.4s ease-in-out forwards;
     
 }
 
     .description-1 {
     
     transform: translateX(1300px);
-    animation: move-back 3s ease-in-out forwards;
+    animation: move-back 1.4s ease-in-out forwards;
     
     }
 
@@ -186,14 +186,14 @@ header h2 {
 .pic-2 img{
     
     transform: translateX(1300px);
-    animation: move-back 3s ease-in-out forwards;
+    animation: move-back 1.4s ease-in-out forwards;
     
 }
 
 .description-2 {
     
     transform: translateX(-1300px);
-    animation: move-back 3s ease-in-out forwards;
+    animation: move-back 1.4s ease-in-out forwards;
     
 }
 
@@ -290,22 +290,22 @@ header h2 {
 
     .pic-1 img {
         animation: none;
-        position: static;
+        transform: translateX(0);
     } 
     
     .pic-2 img {
         animation: none;
-        position: static;
+        transform: translateX(0);
     }
 
     .description-1{
         animation: none;
-        position: static;
+        transform: translateX(0);
     } 
 
     .description-2 {
         animation: none;
-        position: static;
+        transform: translateX(0);
     }
 
     .picture img{
@@ -369,32 +369,5 @@ header h2 {
         border: 1px dotted black;
     }
 
-    @keyframes float-from-left-img {
-        to {
-        bottom:160px;
-        left:30px;
-        }
-    } 
-    
-    @keyframes float-from-right-p {
-        to {
-            top:-50px;
-            right:110px;
-        }
-    } 
-    
-    @keyframes float-from-right-img {
-        to {
-            top:-110px;
-            right:440px;
-        }
-    }
-    
-    @keyframes float-from-left-p {
-        to {
-            bottom:70px;
-            left:355px;
-        }
-    }
 }
 
