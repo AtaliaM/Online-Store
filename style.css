@@ -29,6 +29,10 @@ body {
     z-index: -1;
 }
 
+.container {
+    padding: 5px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -62,6 +66,7 @@ header h2 {
     background: var(--nav-background-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .nav-bar ul {
@@ -165,9 +170,11 @@ header h2 {
 }
 
 .picture-description {
-    width: 400px;
-    padding: 10px;
-    margin: 10px;
+    /* width: 400px; */
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4rem;
     border: 1px dotted black;
@@ -222,11 +229,15 @@ header h2 {
     margin-left: 5px;
     margin-right: 5px;
     padding: 7px;
-    width: 280px;
+    width: 150px;
     height: 190px;
     background: var(--box-bg-color);
     border: 1px dotted black;
     font-size: 11px;
+}
+
+.small-box {
+    height: 130px;
 }
 
 .box h1 {
@@ -311,13 +322,15 @@ header h2 {
 
 @media (min-width:281px) and (max-width: 450px) {
 
-    header h1 {
+    .nav-bar {
+        font-size: 11px;
+    }
 
+    header h1 {
         font-size:26px;   
     }
     
     header h2 {
-       
         font-size: 17px; 
     }
 
@@ -325,9 +338,6 @@ header h2 {
         font-size: 25px;
     }
         
-    .nav-bar {
-        font-size: 6;
-    }
 
     .nav-bar ul li {
         padding: 5px;
@@ -378,10 +388,10 @@ header h2 {
     }
 
     .picture-description {
-        width: 330px;
+        /* width: 330px; */
         height: fit-content;
-        padding: 10px;
-        margin: 10px;
+        /* padding: 10px;
+        margin: 10px; */
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.4rem;
         border: 1px dotted black;
@@ -390,6 +400,10 @@ header h2 {
     .box {
         width: fit-content;
         margin-top: -10px;
+    }
+
+    .small-box {
+        height: 60px;
     }
 
     .box h1{
